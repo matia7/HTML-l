@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titleApliko per Punesim</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Formulari i Aplikimit per Punesim</h1>
+    </header>
+
+    <section>
+        <h2>Plotesoni te dhenat tuaja dhe dergoni aplikimin</h2>
+        <form id="jobApplicationForm" action="process.php" method="post">
+            <label for="emri">Emri:</label>
+            <input type="text" id="emri" name="emri" required>
+
+            <label for="mbiemri">Mbiemri:</label>
+            <input type="text" id="mbiemri" name="mbiemri" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefoni">Numri i Telefonit:</label>
+            <input type="tel" id="telefoni" name="telefoni" required>
+
+            <label for="cv">CV (Ngarkoni CV-in tuaj):</label>
+            <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" required>
+
+            <button type="submit">Dergo Aplikimin</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aplikimi per Punesim. Te gjitha te drejtat e rezervuara.</p>
+    </footer>
+
+</body>
+</html>
